@@ -1,0 +1,31 @@
+<!-- ---
+import FlowerContainer from '../components/FlowerContainer';
+import '../styles/styles.css';
+---
+
+<html>
+  <head>
+    <title>Animación de Flores</title>
+  </head>
+  <body>
+    <FlowerContainer />
+  </body>
+</html> -->
+
+---
+import RosaContainer from '../components/RosaContainer';
+import '../styles/styles.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Animación de Rosas</title>
+  </head>
+  <body>
+    <RosaContainer client:load />
+  </body>
+</html>

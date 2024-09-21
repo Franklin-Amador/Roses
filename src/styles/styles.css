@@ -1,0 +1,45 @@
+/* src/styles/styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para evitar el desplazamiento si las flores se posicionan fuera de la vista */
+    background-color: #f0f8ff; /* Fondo claro para resaltar las flores */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .flower-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    opacity: 0.8; 
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg); 
+    }
+    100% {
+        transform: translateY(0) rotate(-10deg);
+    }
+}
+
+  
+  
+
+  

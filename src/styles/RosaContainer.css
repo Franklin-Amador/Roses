@@ -1,0 +1,13 @@
+.rosa-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .rosa {
+    position: absolute;
+    will-change: left, top;
+    cursor: grab;
+    transition: left 0.1s, top 0.1s;
+  }
